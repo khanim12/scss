@@ -1,0 +1,234 @@
+.bg-boz {
+  background-color: $colorBoz;
+  .logo-container {
+    width: 90%;
+    margin: auto;
+    padding-top: $p2;
+    p {
+      @include typo(300, 24px, $colorBlack);
+      margin: $m2 auto;
+      text-align: center;
+    }
+    &-logos {
+      @include flexBox(center, space-between, 10px, row);
+    }
+    border-bottom: 1px solid $colorBlack;
+    padding-bottom: $p2;
+  }
+  .boz-container {
+    width: 70%;
+    margin: $m4 auto 0;
+    h3 {
+      text-align: center;
+      margin-bottom: $m3;
+    }
+    &-cards {
+      @include flexBox(start, space-between, 15px, row);
+      &-card {
+        background-color: $colorFFF;
+        padding: $p1;
+        border-radius: 14px;
+        margin-bottom: $m3;
+        &-text {
+          margin: 0px $m1;
+          p:first-of-type {
+            color: $colorOrange;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 10px;
+          }
+          h5 {
+            font-size: 34px;
+            font-weight: 500;
+            color: $color463F3C;
+            line-height: 40px;
+          }
+          p:last-of-type {
+            font-size: 16px;
+            font-weight: 400;
+            color: $colorBlack;
+            margin: 20px 0 40px;
+          }
+        }
+        &-img {
+          width: 20%;
+          height: 100px;
+          margin: $m3 $m1;
+        }
+      }
+    }
+  }
+}
+.bg-pink {
+  background-color: $colorPink;
+  padding: $p4;
+  h3 {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto $m5;
+  }
+  .pink-cards {
+    @include flexBox(center, space-between, 100px, column);
+    width: 90%;
+    margin: auto;
+    .pink-card {
+      @include flexBox(start, space-between, 100px, row);
+      &-img {
+        width: 90%;
+
+        img {
+          width: 100%;
+        }
+      }
+      &-text {
+        p:first-of-type {
+          font-size: 14px;
+          color: $colorOrange;
+          font-weight: 500;
+        }
+        p:last-of-type {
+          font-size: 18px;
+          color: $colorBlack;
+          font-weight: 400;
+        }
+        h4 {
+          color: $colorGreen;
+          margin: $m2 0;
+          line-height: 40px;
+          span {
+            color: $colorOrange;
+          }
+        }
+        &-list {
+          @include flexBox(center, start, 10px, row);
+          margin: $m1 0;
+        }
+      }
+    }
+  }
+}
+.bg-red {
+  background-color: $colorOrange;
+  h2 {
+    width: 75%;
+    margin: auto;
+    padding: $p3 0;
+  }
+  &-cards {
+    width: 75%;
+    margin: auto;
+    padding: $p3 0;
+    @include flexBox(center, space-between, 50px, row);
+
+  }
+  &-card{
+    @include flexBox(center,center,10px,column);
+    p{
+        color:#f5c4b7;
+        font-size: 18px;
+        font-weight: 300;
+        text-align: center;
+    }
+   
+  }
+}
+.bg-boz2{
+    background-color: $colorBoz;
+&-container{
+    width: 70%;
+    margin: 0 auto;
+    padding: $p4 0;
+    text-align: center;
+    @include flexBox(center,center,15px,column);
+    h6{
+        color: black;
+        line-height: 38px;
+        font-weight: 400;
+        margin-bottom: $m1;
+    }
+    p:first-of-type{
+        color: $colorOrange;
+        font-size: 26px;
+        font-weight: 600;
+    }
+    p:last-of-type{
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+}
+}
+footer{
+    background-color: $colorGreen;
+    .footer-container-top{
+        padding: $p2;
+        width: 70%;
+        margin: auto;
+        &-head{
+         @include flexBox(center,center,20px,column);
+        }
+        &-cards{
+            @include flexBox(start,space-between,15px,row);
+            margin-top: $m3;
+        }
+        &-card{
+            color: $colorFFF;
+            @include flexBox(start,start,10px,column);
+            text-transform: capitalize;
+            p{
+                margin-bottom: $m1;
+                font-size: 18px;
+                font-weight: 400;
+            }
+            li{
+                margin-bottom: 10px;
+                font-size: 18px;
+                font-weight: 400;
+            }
+        }
+        h4{
+            color: $colorFFF;
+            text-align: center;
+            font-size: 44px;
+            margin: $m1 0 $m2; 
+        }
+        button{
+            background-color: $colorGreen;
+            color: $colorFFF;
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .footer-bottom{
+        @include flexBox(center,space-between,10px,row);
+        color: $colorFFF;
+        width: 80%;
+        margin: auto;
+        text-transform: capitalize;
+        border-top: 1px solid $colorBlack;
+        padding: $p1 0 $p4;
+       
+        font-size: 14px;
+        &-left{
+            @include flexBox(center,center,60px,row);
+            opacity: 0.7;
+            ul{
+                @include flexBox(center,center,45px,row);
+                li{
+                    list-style-type: circle;
+                }
+            }
+        }
+        &-right{
+            @include flexBox(center,center,10px,row);
+        
+            p{
+                font-size: 22px;
+                font-weight: 400;
+                color: $colorFFF;
+            }
+        }
+    }
+}

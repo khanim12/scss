@@ -1,0 +1,25 @@
+
+h1{
+    @include typo(600,80px,$colorGreen);
+}
+h2{
+    @include typo(500,60px,$colorFFF);
+    text-align: center;
+
+}
+
+
+h3{
+    @include typo(600,56px,$colorGreen);
+}
+
+h4{
+    @include typo(600,48px,$color463F3C)
+}
+
+h6{
+    @include typo(600,24px,$colorFFF);
+    text-align: center;
+
+
+}

@@ -1,0 +1,23 @@
+
+@import "./variables";
+@mixin flexBox($align,$justify,$gap, $direction){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    gap: $gap;
+    flex-direction: $direction;
+}
+@mixin btn($border:none,$bgcolor,$color, $padding,$border-radius:90px,  ){
+    border: $border;
+    background-color: $bgcolor;
+    color: $color;
+    padding: $padding;
+    font-size:16px;
+    font-weight:500;
+    border-radius: 90px;
+}
+@mixin typo($font-wh,$fz,$color){
+    font-weight: $font-wh;
+    font-size: $fz;
+    color: $color;
+}

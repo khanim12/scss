@@ -1,0 +1,99 @@
+@import "../utils/variables";
+header {
+  background-color: $colorPink;
+  padding-bottom: $m5;
+  .container {
+    @include flexBox(center, space-between, 20px, row);
+    width: 80%;
+    margin: auto;
+    padding-top: 47px;
+
+    &-left {
+      @include flexBox(center, space-between, 60px, row);
+      ul {
+        @include flexBox(center, space-between, 40px, row);
+        li {
+          color: $color463F3C;
+          text-transform: capitalize;
+          &:first-child {
+            border-bottom: 1px solid $colorred;
+          }
+        }
+      }
+
+      &-logo {
+        @include flexBox(center, space-between, 10px, row);
+      }
+    }
+  }
+  .under-header {
+    width: 80%;
+    margin: $m4 auto;
+    @include flexBox(center, space-between, 30px, row);
+    &-left {
+      span {
+        color: $colorOrange;
+      }
+      p {
+        font-size: 18px;
+        color: $colorBlack;
+        margin: $m2 auto;
+      }
+    }
+    &-right {
+      &-img {
+        position: relative;
+        &-boxbell {
+          @include flexBox(start, space-between, 15px, row);
+          position: absolute;
+          top: 20px;
+          right: -90px;
+          background-color: $colorFFF;
+          padding: $p1;
+          width: 70%;
+          &-img {
+            background-color: $colorOrange;
+            width: 30px;
+            height: 30px;
+            padding: $p1;
+            border-radius: 50px;
+            @include flexBox(center, center, 1px, row);
+          }
+          &-text {
+            p:first-of-type {
+              color: $colorBlack;
+              font-size: 15px;
+            }
+            p:last-of-type {
+              font-size: 20px;
+              color: $color463F3C;
+              font-weight: 600;
+            }
+          }
+        }
+        &-box2 {
+          position: absolute;
+          bottom: -30px;
+          left: -70px;
+          background-color: $colorFFF;
+          width: 40%;
+          padding: $p1;
+          text-align: center;
+          p{
+            font-size: 14px;
+            color: $colorBlack;
+          }
+          &-h {
+            position: relative;
+            z-index: 5;
+          }
+          &-img {
+            position: absolute;
+            top: 40px;
+            left: 30px;
+          }
+        }
+      }
+    }
+  }
+}

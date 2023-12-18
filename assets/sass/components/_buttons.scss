@@ -1,0 +1,14 @@
+
+.button-orange {
+  @include btn(none,$colorOrange, $colorWhite, 15px 30px, 500);
+  text-transform: capitalize;
+}
+.button-white {
+  @include btn(2px solid $colorDCDCD8, $colorPink, $colorBlack, 15px 30px, 57px);
+  text-transform: capitalize;
+  margin-right: 10px;
+}
+.button-red{
+  @include btn(1px solid $colorred, $colorPink, $colorred, 15px 30px, 57px);
+  text-transform: capitalize;
+}
